@@ -2,38 +2,46 @@ package me.kjs;
 
 
 /*
-*
-*
-* */
+ *
+ *
+ * */
 @MyAnnotation("asd")
 public class Book {
 
-    private String a = "a";
-    private static String B = "BOOK";
-    private static String C = "BOOK";
-    public String d = "d";
-    protected String e = "e";
+  private String a = "a";
+  private static String B = "BOOK";
+  private static String C = "BOOK";
+  public String d = "d";
+  protected String e = "e";
 
-    public Book() {
-    }
+  public Book() {
+  }
 
-    @AnotherAnnotation
-    public Book(String a, String d, String e) {
-        this.a = a;
-        this.d = d;
-        this.e = e;
-    }
+  public Book(String a) {
+    this.a = a;
+  }
 
-    private void f() {
-        System.out.println("f");
-    }
+  @AnotherAnnotation
+  public Book(String a, String d, String e) {
+    this.a = a;
+    this.d = d;
+    this.e = e;
+  }
 
-    public void g() {
-        System.out.println("g");
-    }
+  private void f() {
+    System.out.println("f");
+  }
 
-    @AnotherAnnotation
-    public int h() {
-        return 100;
-    }
+  public void g() {
+    System.out.println("g");
+  }
+
+  @AnotherAnnotation
+  public int h() {
+    return 100;
+  }
+
+  public int sum(int left, int right) {
+    return left + right;
+  }
 }
