@@ -7,3 +7,11 @@
 - [2장 바이트코드 조작](./chapter_2)
 - [3장 리플렉션](./chapter_3)
 - [4장 다이나믹 프록시](./chapter_4)
+- [5장 애노테이션 프로세서](./chapter_5)
+
+
+## 키워드 정리
+- 바이트코드 조작 - ASM, `ByteBuddy`
+- 리플렉션 API - 클래스의 정보 참조 가능(메소드, 필드, 생성자,...) / 성능적 이슈 있을 수 있음!
+- 다이나믹 프록시 기법 - Proxy, CGlib, `ByteBuddy`
+- 애노테이션 프로세서 - Abstract`Processor`, Filer, ... ,`JavaPoet`, `AutoService`
